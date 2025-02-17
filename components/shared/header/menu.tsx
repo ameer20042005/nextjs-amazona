@@ -3,16 +3,16 @@ import Link from 'next/link'
 
 export default function Menu() {
   return (
-    <div className='flex justify-end'>
-      <nav className='flex gap-3 w-full'>
-        <Link href='/cart' className='header-button'>
-          <UserIcon className='h-8 w-8' />
-          <span className='font-bold'>Sign in</span>
+    <div className='flex justify-end text-black p-4 shadow-md'>
+      <nav className='flex gap-4 w-full items-center'>
+        <Link href='/signin' className='header-button flex items-center gap-2 text-white hover:text-gray-300 transition'>
+          <UserIcon className='h-6 w-6 text-white' />
+          <span className='font-semibold text-sm text-white'>Sign in</span>
         </Link>
 
-        <Link href='/cart' className='header-button'>
-          <ShoppingCartIcon className='h-8 w-8' />
-          <span className='font-bold'>Cart</span>
+        <Link href='/cart' className='header-button flex items-center gap-2 text-white hover:text-gray-300 transition'>
+          <ShoppingCartIcon className='h-6 w-6 text-white' />
+          <span className='font-semibold text-sm text-white'>Cart</span>
         </Link>
       </nav>
     </div>
